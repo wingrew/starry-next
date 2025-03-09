@@ -6,9 +6,9 @@ A monolithic kernel based on [ArceOS](https://github.com/arceos-org/arceos).
 
 ## Quick Start
 
- 
-This is a repository specifically designed for cloud development, so it is recommended to have some understanding of **starryos** beforehand.
 
+This is a repository specifically designed for cloud development, so it is recommended to have some understanding of **starryos** beforehand.
+First of all. you should excute `./scripts/get_deps.sh`.
 ### About the testcases:
 By executing `./config.sh platform`, the challenge will be automatically fetched, and the corresponding image file will be generated in the current directory. The `platform` can be set to either `riscv` or `loongarch`, depending on which architecture you want to test for the challenge.
 
