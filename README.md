@@ -28,6 +28,6 @@ qemu-system-loongarch64 -m 1G -smp 1 -kernel ./kernel-la -device virtio-blk-pci,
 ```
 
 These commands will run the respective virtual machines for either **RISC-V** or **LoongArch** platforms.
-
+(The command is referenced from the original repository.)
 The specific testcase to test can be specified through `apps/oscomp/testcase_list`.
 
