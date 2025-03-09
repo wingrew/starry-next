@@ -62,7 +62,6 @@ oscomp_test:
 	@./scripts/oscomp_test.sh
 
 test_build: ax_root defconfig
-	@cp -r $(PWD)/bin/* /root/.cargo/bin
 	@make -C $(AX_ROOT) A=$(PWD) EXTRA_CONFIG=$(EXTRA_CONFIG) build
 	@if [ "$(ARCH)" = "riscv64" ]; then \
 		cp $(OUT_BIN) kernel-rv; \
