@@ -2,6 +2,7 @@
 
 platform=$1
 if [ ! -d "../testcases-25" ]; then
+  apt install e2tools
   cd ..
   git clone https://github.com/oscomp/testsuits-for-oskernel.git testcases-25
   cd testcases-25 && git checkout pre-2025  
@@ -17,5 +18,7 @@ if [ -f "make_img.sh" ]; then
   mv make_img.sh ../testcases-25/
 fi
 
-../testcases-25/make_img.sh $platform
+cd ../testcases-25
+./make_img.sh $platform
+cd ../starry-next
 mv ../testcases-25/sdcard-$platform.img ./
