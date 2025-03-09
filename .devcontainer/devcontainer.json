@@ -1,19 +1,13 @@
 {
-    "name": "Starry",
-    "build": {
-        "dockerfile": "Dockerfile"
-    },
-    "runArgs": [
-        "--privileged"
-    ],
-    "postCreateCommand": "rustup show",
-    "customizations": {
-        "vscode": {
-            "extensions": [
-                "rust-lang.rust-analyzer",
-                "ms-vscode.cpptools",
-                "tamasfe.even-better-toml"
-            ]
-        }
+  "features": {},
+  "image": "docker.educg.net/cg/os-contest:20250226",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "rust-lang.rust-analyzer",
+        "webfreak.debug",
+        "ms-vscode.cmake-tools"
+      ]
     }
+  }
 }
